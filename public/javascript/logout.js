@@ -7,6 +7,5 @@ async function logout(){
         alert(response.statusText);
 
     }
-    window.location.replace('/');
 }
 document.querySelector('#logout').addEventListener('click', logout);
