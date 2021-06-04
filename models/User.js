@@ -1,7 +1,6 @@
 const {Model, DataTypes, DATE}=require('sequelize');
 const sequelize=require('../config/connection');
 const bcrypt = require('bcrypt');
-const { beforeCreate, beforeUpdate } = require('../../just-tech-new/models/User');
 
 class User extends Model{
     checkPassword(loginPw){
