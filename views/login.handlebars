@@ -1,29 +1,33 @@
-<form id="login-form">
-    <h2>Login:</h2>
-    <div>
-        <label for="login-username">Username:</label>
-        <input type="text" id="login-username" name="login-username"/>
+<form id="login-form" class="container">
+    <div class="row">
+        <h2 class="col-4">Login:</h2>
     </div>
-    <div>
-        <label for="login-pw">Password:</label>
-        <input type="password" id="login-pw" name="login-pw"/>
+    <div class="mb-3">
+        <label for="login-username" class="form-label">Username:</label>
+        <input class="form-control" type="text" id="login-username" name="login-username"/>
     </div>
-    <button type="submit" id="login-submit">login</button>
+    <div class="mb-3">
+        <label class="form-label" for="login-pw">Password:</label>
+        <input class="form-control" type="password" id="login-pw" name="login-pw"/>
+    </div>
+    <button class="btn btn-secondary" type="submit" id="login-submit">login</button>
 </form>
-<form id="register-form">
-    <h2>Register:</h2>
-    <div>
-        <label for="register-email">Email:</label>
-        <input type="text" id="register-email" name="register-email">
+<form id="register-form" class="container">
+    <div class="row">
+        <h2 class="col-4">Register:</h2>
     </div>
-    <div>
-        <label for="register-username">Username:</label>
-        <input type="text" id="register-username" name="register-username"/>
+    <div class="mb-3">
+        <label class="form-label" for="register-email">Email:</label>
+        <input class="form-control" type="text" id="register-email" name="register-email">
     </div>
-    <div>
-        <label for="register-pw">Password:</label>
-        <input type="password" id="register-pw" name="register-pw">
+    <div class="mb-3">
+        <label class="form-label" for="register-username">Username:</label>
+        <input class="form-control" type="text" id="register-username" name="register-username"/>
     </div>
-    <button type="submit" id="register-submit">Register</button>
+    <div class="mb-3">
+        <label class="form-label" for="register-pw">Password:</label>
+        <input class="form-control" type="password" id="register-pw" name="register-pw">
+    </div>
+    <button class="btn btn-secondary" type="submit" id="register-submit">Register</button>
 </form>
 <script src="/javascript/login.js"></script>

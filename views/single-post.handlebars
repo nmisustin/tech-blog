@@ -1,10 +1,10 @@
 {{> posts post}}
 {{#if loggedIn}}
 <form class="comment-form">
-    <div>
-        <textarea name="comment-body"></textarea>
+    <div class="mb-3">
+        <textarea class="form-control" name="comment-body" id="comment-body"></textarea>
     </div>
-    <button type="submit">add comment</button>
+    <button class="btn btn-secondary" type="submit">add comment</button>
 </form>
 {{/if}}
 <div class="comments">

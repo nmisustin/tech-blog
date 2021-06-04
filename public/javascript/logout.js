@@ -3,11 +3,10 @@ async function logout(){
         method: 'post',
         headers: {'Content-Type': 'application/json'}
     });
-    if (response.ok){
-        document.location.replace('/');
-    }
-    else{
+    if (!response.ok){
         alert(response.statusText);
+
     }
+    window.location.replace('/');
 }
 document.querySelector('#logout').addEventListener('click', logout);

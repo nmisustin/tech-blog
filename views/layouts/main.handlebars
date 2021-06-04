@@ -5,20 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Tech Blog</title>
         <link rel="stylesheet" href="/stylesheets/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     </head>
     <body>
         <div class="wrapper">
-            <header>
-                <h1>
-                    <a href="/">Tech Blog</a>
-                </h1>
-                <nav>
+            <header class="header">
+                <nav class="navbar navbar-dark bg-dark">
+                    <a class="navbar-brand" href="/">Tech Blog</a>
+                
                     {{#if loggedIn}}
-                    <a href="/dashboard">dashboard</a>
-                    <button id="logout" class="btn">logout</button>
+                    <a class="btn btn-dark" href="/dashboard">dashboard</a>
+                    <button id="logout" class="btn btn-dark">logout</button>
                     <script src="/javascript/logout.js"></script>
                     {{else}}
-                    <a href="/login">login</a>
+                    <a class="btn btn-dark" href="/login">login</a>
                     {{/if}}
                 </nav>
             </header>
